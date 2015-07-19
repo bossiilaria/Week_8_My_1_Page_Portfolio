@@ -1,0 +1,1289 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #4d4d4d; 
+	overflow-x:hidden;
+}
+
+html {
+	height: 100%;
+
+}
+
+strong {font-family:'GMedium', sans-serif;}	
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+ 
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+body{
+	background-color:#e6e6e6;
+	color:#333333;
+	text-align:center;
+	font-size: 20px;
+	font-family:'GLight', sans-serif;
+	height: 100%;
+	
+}
+
+			#wrapper{
+				margin: 0 auto;
+				min-height: 100%;
+				min-width:640px;
+				position:relative;
+				-webkit-transition: all 0.5s linear;
+			}
+			
+			
+			
+			/* navigation */
+			
+			.menu{
+				position: absolute;
+				height: 62px;
+				z-index: 500;
+				width:100%;
+				min-width:640px;
+			    /* background color of nav
+			    background-color: rgb(0, 0, 0);
+			    background-color: rgba(0, 0, 0, 0.6);
+			    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+			    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+				*/
+			}
+			
+				.nav-white{
+					color: #434343;
+					border-bottom: 0px solid #fff;
+				}
+				
+				.nav-black-bg{
+					
+				}
+			
+				.nav-black{
+					color: #000;
+					border-bottom: 0px solid #000;
+				}
+				
+				.nav-black{
+					color: #000;
+					border-bottom: 0px solid #000;
+				}
+			
+			.menu ul{
+				position: absolute;
+				left: 50%;
+				margin-left: -250px; /* (width + padding)/2 */
+			}
+		
+			.menu.fixed{
+				position: fixed;
+				top: 0px;
+			}
+			
+			.menu li {
+				line-height: 0px;
+   				width:auto;
+   				height:40px;
+				float:left;
+   				padding:17px 20px;
+				margin:0px 10px;
+				margin-top:22px;
+   				text-align:center;
+   				-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+   				-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+   				box-sizing: border-box;	         /* Opera/IE 8+ */
+   				transition: all .3s linear;
+   				-webkit-transition: all .3s linear;
+   				-moz-transition: all .3s linear;
+   				-o-transition: all .3s linear;
+   				font-family:'GBold', sans-serif;
+				cursor:pointer;
+			}
+		
+				.menu .active{
+					
+					border-bottom: 2px solid;
+					padding:10px 20px;
+					
+				}
+				
+				
+			
+				.menu li:hover{
+					border-bottom: 2px solid;
+					padding:10px 20px;
+				}
+				
+		
+			.menu-bar{
+				display: none;
+			}
+		
+		
+			/* header Styles */
+			h1 {font-family:'GBold', sans-serif; font-size:3em; text-transform:uppercase;}
+			h2 {font-family:'goudyitalic', serif; font-size:1.2em;}
+			h3 {font-family:'goudyitalic', serif; font-size:1.3em;}
+			
+			
+			/* Section Styles */
+			section{
+				margin: 0 auto;
+				margin-top:0;
+				padding-top:0;
+				float:left;
+				clear:both;
+				width:100%;
+				min-width:100%;
+				z-index:400;
+				display:block;
+			}
+			
+			/* Content Styles */
+			.content{
+				max-width:100%;
+				margin: 0 auto;
+				margin-top:0;
+				padding-top:0;
+				display:block;
+				z-index: 480;
+			}
+			
+			
+			/* Reel Styles */
+			#welcome{
+			
+			}
+				#welcome section{
+					margin-bottom:0px;
+					background-image: url("img/welcome.jpg");
+					background-repeat: no-repeat;
+					background-position: 50% 0%;
+					background-attachment: fixed;
+					-webkit-background-size: cover;
+					-moz-background-size: cover;
+					-o-background-size: cover;
+					background-size: cover;
+				    opacity: 0.95;
+				    filter: alpha(opacity=95); /* For IE8 and earlier */  
+				
+				}
+					#welcome .content{
+						position: relative;
+						  top: 35%;
+						  transform: translateY(-35%);
+						  line-height:1.5em;
+						  color:#434343;
+					}
+					
+					
+					
+					
+			/* Work Styles */
+			#work{
+				position: relative;
+			}
+				#work section{
+					background-color:#333;
+					position: relative;
+					padding-top:0px;
+					padding-bottom:0px;
+					margin-bottom:0px;
+					width:100%;
+				}
+					#work .content{
+						position: relative;
+						
+					}					
+			
+					.col{
+					    
+						margin: 0 auto;
+						margin-top: 0;
+						padding-top: 0;
+						display: block;
+						z-index: 480;
+						width:25%;
+					      float:left;
+					}	
+					
+					.col2{
+					
+					}	
+					
+					#work .content a div{
+						position: absolute;
+						background: #000;
+						background: rgba(0,0,0,0.8);
+						max-width: 100%;
+					}
+					
+					#work .content a span {
+						display: block;
+						padding: 10px 0;
+						margin: 40px 20px 20px 20px;
+						text-transform: uppercase;
+						font-weight: normal;
+						color: rgba(255,255,255,0.9);
+						font-size:16px;
+					}
+					
+					
+			
+			
+			
+			
+			
+			
+			/* About Styles */
+			#about{
+				position: relative;
+			}
+				#about section{
+					background-color:#e6e6e6;
+					padding-top:30px;
+					padding-bottom:62px;
+				}
+					#about .content{
+						z-index: 485;
+						margin-top:0;
+						margin-bottom:0;
+						margin: 0 auto;
+						width:890px;
+					}					
+					
+					#about .bio-img{
+						float: left;
+						width: 300px;
+						height: auto;
+						margin-right: 40px;
+						margin-top: 40px;
+						position: relative;
+						display: block;
+						
+					}
+					
+						#about .bio-img img{
+							width:300px;
+							height:300px;
+							-webkit-clip-path: ellipse(50% 50% at 50% 50%);
+							clip-path: ellipse(50% 50% at 50% 50%);
+						}
+					
+						#about .social{
+						position:relative;
+						margin-left:20px;
+						}
+						
+						#about svg{
+							float:left;
+							display:block;
+							height:30px;
+							margin:0 15px;
+						}
+						
+						 #instagram-fill, #flickr-fill, #flickr-fill2, #medium-fill, #twitter-fill{
+					 		transition: all .3s ease-in-out ;
+					 		-moz-transition: all  .3s ease-in-out ;
+					 		-webkit-transition: all .3s ease-in-out ; /* For Safari 3.1 to 6.0 */
+						 }
+						
+						#about svg:hover #instagram-fill, #about svg:hover #flickr-fill, #about svg:hover #flickr-fill2, #about svg:hover #medium-fill, #about svg:hover #twitter-fill{
+							 fill: #b3b3b3; 
+						 }
+					
+					
+						#about section .content .bio-copy{
+							position: relative;
+							display: block;
+							float: left;
+							margin-top: 30px;
+							max-width: 550px;
+						}
+						
+					
+							#about .title{
+								font-size: 35px;
+								max-width: 550px;
+								line-height: 43px;
+								margin-left: 0px;
+								text-align: left;
+							}
+							
+						
+							#about .body-copy{
+								margin:0 auto;
+								margin-top:10px;
+								margin-bottom:20px;
+								font-size:18px;
+								line-height:25px;
+								text-align:left;
+						 		
+							}	
+							
+							.body-copy-link{
+						 		transition: all .5s ease-in-out ;
+						 		-moz-transition: all  .5s ease-in-out ;
+						 		-webkit-transition: all .5s ease-in-out ; /* For Safari 3.1 to 6.0 */
+							}
+							
+							 .body-copy a:link, .body-copy a:visited{
+								font-family:'GBook', sans-serif;
+								color:#333333;
+								padding-bottom:0;
+								border-bottom: solid rgba(51, 51, 51, .0) 0px;
+								cursor:pointer;
+							}
+							
+							.body-copy a:hover{
+								color:#000;
+								padding-bottom:1px;						
+								border-bottom: solid rgba(0, 0, 0, .5) 2px;
+								
+								
+							}
+							
+							
+					
+					#about section .content .logos{
+						margin:0 auto;
+						padding: 60px 0;
+					}	
+			
+					#about a {
+						text-decoration:none;
+					}
+			
+			
+			
+			/* Contact Styles */
+			#contact{
+				text-align:center;
+				display:block;
+				padding-top:35px;
+				padding-bottom:0px;
+			}
+			
+				#contact section{
+					background-color:#fff;
+
+				}
+						#contact .content{
+							position:relative;
+							padding-top:50px;
+							margin-top:0;
+							margin-bottom:0;
+							
+						}
+						
+						#contact .title{
+							font-size: 35px;
+							max-width: 700px;
+							line-height: 60px;
+							margin-left: 0px;
+							text-align: center;
+							margin: 0 auto;
+						}
+						
+						.links-holder{
+							position:relative;
+							margin:0 auto;
+							max-width:900px;
+						}
+						
+							.links-holder span{
+								display:inline-block;
+								
+								margin: 0px 20px;
+							}
+							
+							.links-holder span img{
+								margin: 0 10px 2px 0px;
+							}
+			
+									
+					   .social{
+						   display:block;
+						   clear:both;
+						   margin: 0 auto;
+						   padding: 30px 0;
+						   
+					   }
+					   
+					   #contact .social{
+						   display:block;
+						   clear:both;
+						   margin: 0 auto;
+						   padding-top: 0px;
+						   padding: 0px 0;
+						   
+					   }
+					   
+					   .fb-share-button{
+						   margin: 100px 0;
+					   }
+			
+		   			
+						
+						.btn:link, .btn:visited {
+							width: auto;
+							height: auto;
+							padding: 10px 25px;
+							text-align: left;
+							margin-right: 20px;
+							float: left;
+							border: 1px solid #333333;
+							color:rgba(255, 255, 255, 1) ;
+							background: rgba(51, 51, 51, 1);
+		
+							-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+							-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+							box-sizing: border-box;	         /* Opera/IE 8+ */
+
+							transition: all .2s linear;
+							-webkit-transition: all .2s linear;
+							-moz-transition: all .2s linear;
+							-o-transition: all .2s linear;
+							font-family:'GLight', sans-serif !important;
+							font-weight:normal;
+						}
+
+							.btn:hover{
+								border: 1px solid #000;
+								color:rgba(51, 51, 51, 1);
+								background: rgba(0, 0, 0, 0);
+							}	
+			
+	
+	.glight{font-family:'GLight', sans-serif;}	
+	.gmed{font-family:'GMedium', sans-serif;}	
+	.gbook{font-family:'GBook', sans-serif;}
+	.gbold{font-family:'GBold', sans-serif;}	
+	
+	.adriancabrero{
+		display:block;
+		position:fixed;
+		bottom:10px;
+		right:10px;
+		font-size:10px;
+		color:#898989;
+		text-decoration:none;
+		font-family:'GMedium', sans-serif;
+		transition: all .4s linear;
+		-webkit-transition: all .4s linear;
+		-moz-transition: all .4s linear;
+		-o-transition: all .4s linear;
+	}
+	
+	.adriancabrero:hover{
+		color:#000;
+	}
+		
+		
+		
+		
+
+
+
+
+
+
+	/* ==========================================================================
+	   Morph Buttons
+	   ========================================================================== */
+
+	.z-top{
+		z-index:999;
+	}
+	
+	.z-norm{
+		z-index:400;
+	}
+
+	/* Morph Button: Default Styles */
+
+	*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+
+	.morph-button {
+		position: relative;
+	}
+
+	.morph-button > button {
+		position: relative;
+		padding: 0 0em;
+		border: none;
+		background-color: #000;
+		color: #fff;
+		letter-spacing: 1px;
+		font-weight: 700;
+		line-height: 80px;
+		overflow: hidden;	
+		display: inline-block;
+		cursor:pointer;
+	}
+
+	button img{
+		width: 100%;
+		height: auto;
+		margin: 0 0px;
+		transition:  width .1s ease-in 0.3s;
+		-moz-transition: width .1s ease-in 0.3s;
+		-webkit-transition: width .1s ease-in 0.3s; /* For Safari 3.1 to 6.0 */
+		cursor:pointer !important;
+	}
+
+	.morph-button.open > button {
+		pointer-events: none;
+	}
+	
+	.btncopy{
+		display:block;
+		position:absolute;
+		top: 45%;
+		transform: translateY(-50%);
+		opacity:0;
+ 	   transition: all .35s, ease-in-out;
+ 	   -moz-transition: all .35s ease-in-out;
+ 	   -webkit-transition: all .35s ease-in-out;
+	   right: 0;
+	   left: 0;
+	   margin-right: auto;
+	   margin-left: auto;
+	   width: 100%;
+	   height:20px;
+	   line-height:1.2em;
+	   z-index:10;
+	}
+	
+
+	
+   	button:hover .btncopy {
+      	opacity: 1;
+      	-moz-opacity: 1;
+      	filter:alpha(opacity=100);
+		top: 45%;
+      }
+	  
+    button:hover .fade {
+        opacity: 0.3;
+        -moz-opacity: 0.3;
+        filter:alpha(opacity=30);
+  	  
+      }  
+	  
+		.btntitle{
+			opacity:1;
+			font-size:20px; 
+			text-transform: uppercase;
+			font-family:'Gbold', sans-serif; 
+			font-weight:normal;
+		}
+		.btndesc{
+			opacity:1;
+			font-family:'goudyitalic', serif;  
+			font-size:15px; 
+			font-weight:normal;
+		}
+	
+	
+	.fade {
+		z-index	:9;
+	   opacity: 1;
+	   transition: all .35s, ease-in-out;
+	   -moz-transition: all .35s ease-in-out;
+	   -webkit-transition: all .35s ease-in-out;
+	   }
+
+	   
+
+	.morph-content {
+		pointer-events: none;
+	}
+
+	.morph-button.open .morph-content {
+		pointer-events: auto;
+		
+	}
+
+	/* Common styles for overlay and modal type (fixed morph) */
+	.morph-button-fixed,
+	.morph-button-fixed .morph-content {
+		width: 100%;
+		height: 100%;
+	}
+
+	.morph-button-fixed > button {
+		z-index	: 1000;
+ 	   transition	: all 0.3s 0.5s;
+ 	   -moz-transition: all 0.3s 0.5s;
+ 	   -webkit-transition: all 0.3s 0.5s;
+	}
+
+	.morph-button-fixed.open > button {
+		opacity: 0;
+  	   transition: all 0.2s 0.5s;
+  	   -moz-transition: all 0.2s 0.5s;
+  	   -webkit-transition: all 0.2s 0.5s;
+	}
+
+	.morph-button-fixed .morph-content {
+		position: fixed;
+		z-index: 900;
+		opacity: 0;
+  	   transition: all 0.2s 0.5s;
+  	   -moz-transition: all 0.2s 0.5s;
+  	   -webkit-transition: all 0.2s 0.5s;
+	}
+
+	.morph-button-fixed.open .morph-content {
+		opacity: 1;
+	}
+
+	.morph-button-fixed .morph-content > div {
+		visibility: hidden;
+		height: 0;
+		opacity: 0;
+		-webkit-transition: opacity 0.4s, visibility 0s 0.2s;
+		transition: opacity 0.4s, visibility 0s 0.2s;
+	}
+
+	.morph-button-fixed.open .morph-content > div {
+		visibility: visible;
+		height: auto;
+		opacity: 1;
+  	   transition: all 0.2s;
+  	   -moz-transition: all 0.2s;
+  	   -webkit-transition: all 0.2s;
+	}
+
+	.morph-button-fixed.active > button {
+		z-index: 2000;
+	}
+
+	.morph-button-fixed.active .morph-content {
+		z-index: 1900;
+	}
+
+	/* Transitions for overlay button and sidebar button */
+	.morph-button-overlay .morph-content,
+	.morph-button-sidebar .morph-content {
+		-webkit-transition: opacity 0.2s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
+		transition: opacity 0.2s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
+	}
+
+	.morph-button-overlay.open .morph-content,
+	.morph-button-sidebar.open .morph-content {
+		-webkit-transition: opacity 0.6s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s;
+		transition: opacity 0.6s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s;	
+	}
+
+	/* Morph Button Style: Overlay */
+	.morph-button.morph-button-overlay {
+		margin: 0px 0px 0 0;
+	}
+
+	.morph-button-overlay .morph-content {
+		overflow: hidden;
+		background: #333333;
+	}
+
+	.morph-button-overlay.open .morph-content {
+		top: 0 !important;
+		left: 0 !important;
+		width: 100%;
+		height: 100%;
+	}
+
+
+	/* Morph Button Style: In the content flow */
+	.morph-button-inflow {
+		overflow: hidden;
+		max-width: 100%;
+		height: 70px;
+	}
+
+	.morph-button-inflow > button {
+		width: 100%;
+		line-height: 70px;
+	}
+
+	.morph-button-inflow .morph-content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+
+	.morph-button-inflow .morph-content .morph-clone {
+		padding: 0;
+		font-weight: 700;
+		font-size: 1.5em;
+		line-height: 70px;
+	}
+
+	/* Colors and sizes for individual in flow buttons */
+	.morph-button-inflow-1 {
+		width: 600px;
+		margin: 2em auto;
+		-webkit-transition: height 0.5s cubic-bezier(0.7,0,0.3,1);
+		transition: height 0.5s cubic-bezier(0.7,0,0.3,1);
+	}
+
+	.morph-button-inflow-1 > button span {
+		visibility: hidden;
+	}
+
+	.morph-button-inflow-1 .morph-content .morph-clone {
+		color: #f9f6e5;
+		background: #ebebeb;
+	}
+
+	.morph-button-inflow-2 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 220px;
+		background-color: #fef0e3;
+		-webkit-transition: height 0.3s, width 0.3s, -webkit-transform 0.3s;
+		transition: height 0.3s, width 0.3s, transform 0.3s;
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		transform: translateX(-50%) translateY(-50%);
+	}
+
+	.morph-button-inflow-2 > button {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: transparent;
+		color: #e75854;
+		-webkit-transition: -webkit-transform 0.3s;
+		transition: transform 0.3s;
+	}
+
+	.morph-button-inflow-2.open > button {
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%);
+	}
+
+	.morph-button-inflow-2 .morph-content {
+		width: 260px;
+		height: 200px;
+	}
+
+	.morph-button-inflow-2.open {
+		width: 260px;
+	}
+
+
+	/* Let's add some nice easing for all cases */
+	.morph-button .morph-content,
+	.morph-button.open .morph-content,
+	.morph-button-modal-4 .morph-clone {
+		-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+		transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+	}
+
+	/* Helper classes */
+	.noscroll {
+		overflow: hidden;
+	}
+
+	.morph-button-overlay.scroll .morph-content {
+		overflow-y: scroll;
+	}
+
+	.morph-button-sidebar.scroll .morph-content {
+		overflow: auto;
+	}
+
+	/* No JS fallback: let's hide the button and show the content */
+	.no-js .morph-button > button {
+		display: none;
+	}
+
+	.no-js .morph-button {
+		margin: 10px 0;
+		float: none;
+	}
+
+	.no-js .morph-button,
+	.no-js .morph-button .morph-content,
+	.no-js .morph-button .morph-content > div {
+		position: relative;
+		width: auto;
+		height: auto;
+		opacity: 1;
+		visibility: visible;
+		top: auto;
+		left: auto;
+		-webkit-transform: none;
+		transform: none;
+		pointer-events: auto;
+	}
+
+	.no-js .morph-button .morph-content .icon-close {
+		display: none;
+	}
+
+	.no-js .morph-button-sidebar {
+		/* width: 300px; */
+		position: fixed;
+		top: 0;
+		left: 0;
+		margin: 0;
+		height: 100%;
+		background: #ebebeb;
+		overflow: auto;
+	}
+
+	.no-transition {
+		-webkit-transition: none !important;
+		transition: none !important;
+	}			
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+
+@font-face {
+    font-family: 'GBold';
+    src: url('../media/font/g-bold.otf-webfont.eot');
+    src: url('../media/font/g-bold.otf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../media/font/g-bold.otf-webfont.woff') format('woff'),
+         url('../media/font/g-bold.otf-webfont.ttf') format('truetype'),
+         url('../media/font/g-bold.otf-webfont.svg#GBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GBook';
+    src: url('../media/font/g-book.otf-webfont.eot');
+    src: url('../media/font/g-book.otf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../media/font/g-book.otf-webfont.woff') format('woff'),
+         url('../media/font/g-book.otf-webfont.ttf') format('truetype'),
+         url('../media/font/g-book.otf-webfont.svg#GBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GLight';
+    src: url('../media/font/g-light.otf-webfont.eot');
+    src: url('../media/font/g-light.otf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../media/font/g-light.otf-webfont.woff') format('woff'),
+         url('../media/font/g-light.otf-webfont.ttf') format('truetype'),
+         url('../media/font/g-light.otf-webfont.svg#GLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GMedium';
+    src: url('../media/font/g-medium.otf-webfont.eot');
+    src: url('../media/font/g-medium.otf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../media/font/g-medium.otf-webfont.woff') format('woff'),
+         url('../media/font/g-medium.otf-webfont.ttf') format('truetype'),
+         url('../media/font/g-medium.otf-webfont.svg#GMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'goudyitalic';
+    src: url('../media/font/goudy-italic-webfont.eot');
+    src: url('../media/font/goudy-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../media/font/goudy-italic-webfont.woff') format('woff'),
+         url('../media/font/goudy-italic-webfont.ttf') format('truetype'),
+         url('../media/font/goudy-italic-webfont.svg#goudyitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'goudyroman';
+    src: url('../media/font/goudy-webfont.eot');
+    src: url('../media/font/goudy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../media/font/goudy-webfont.woff') format('woff'),
+         url('../media/font/goudy-webfont.ttf') format('truetype'),
+         url('../media/font/goudy-webfont.svg#goudyroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+/* Media Queries */
+
+@media screen and (max-width: 910px) {
+	
+	/* work styles */
+	
+	.col{
+		
+		z-index: 480;
+		width:100%;
+	      float:left;  
+	}	
+	
+	.col2{
+		
+		z-index: 480;
+		width:50%;
+	      float:left;
+	}	
+	
+	
+	
+	/* about styles */
+	
+	#about .bio-img {
+		float: none; 
+		width: 300px;
+		height: auto;
+		margin-right: 0px;
+		margin: 0 auto;
+		margin-top: 40px;
+		position: relative;
+		display: block;
+	}
+	
+	#about section .content .bio-copy {
+		position: relative;
+		display: block;
+		float: none;
+		margin-top: 30px;
+		max-width: 550px;
+		margin: 0px auto;
+	}
+	
+	#about .title {
+		font-size: 35px;
+		max-width: 550px;
+		line-height: 43px;
+		margin-left: 0px;
+		margin-top: 30px;
+		text-align: left;
+	}
+	
+	
+}
+
+
+@media screen and (min-width: 1500px) {
+
+	h1 {
+		font-family: 'GBold', sans-serif;
+		font-size: 4em;
+		text-transform: uppercase;
+	}
+
+	h2 {
+		font-family: 'goudyitalic', serif;
+		font-size: 1.4em;
+	}
+	
+	h3 {
+		font-family: 'goudyitalic', serif;
+		font-size: 1.5em;
+	}
+	
+}
+
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : portrait) {
+	#welcome .content{
+		position: relative;
+		  top: 12%;
+		  transform: translateY(-35%);
+		  line-height:1.5em;
+		  color:#fff;
+	}
+	
+	#welcome section{
+		height:300px;
+	
+	}
+
+}
+
+
+
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

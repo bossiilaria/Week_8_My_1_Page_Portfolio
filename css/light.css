@@ -1,0 +1,415 @@
+/*
+ * Theme Name: Quform Light
+ * Description: A light design.
+ * Version: 1.0 (For Quform PHP)
+ * Author: ThemeCatcher
+ * Author URI: http://www.themecatcher.net
+ */
+
+/*****************************************************
+1: Form heading and description
+******************************************************/
+/*Set global fonts*/
+.quform-theme-light-light {
+	color: #000;
+}
+/*Form Heading*/
+.quform-theme-light-light h3.quform-title {
+	color: #000;
+}
+/*Form description*/
+.quform-theme-light-light p.quform-description {
+	color: #666;
+}
+
+/*****************************************************
+2: Elements and labels
+******************************************************/
+
+::-webkit-input-placeholder {
+   color: #4d4d4d;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #4d4d4d;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #4d4d4d;  
+}
+
+:-ms-input-placeholder {  
+   color: #4d4d4d;  
+}
+
+/*Required - this is the text that is used to indicate a required field*/
+.quform-theme-light-light .quform-element label span.quform-required {
+    color: #000;
+}
+/*Element description*/
+.quform-theme-light-light .quform-element p.quform-description {
+	color: #000;
+}
+/*Default state input, selects and textareas*/
+.quform-theme-light-light .quform-elements .quform-element-text input,
+.quform-theme-light-light .quform-elements .quform-element-captcha input,
+.quform-theme-light-light .quform-elements .quform-element-password input,
+.quform-theme-light-light .quform-elements .quform-element select,
+.quform-theme-light-light .quform-elements .quform-element textarea {
+	color: #4d4d4d;
+	border: 1px solid #f2f2f2;
+	font-size:16px;
+	padding: 20px;
+	background: #f2f2f2;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;	         /* Opera/IE 8+ */
+		-webkit-transition: 500ms ease-in-out;sub
+	-moz-transition: 500ms ease-in-out;
+	-ms-transition: 500ms ease-in-out;
+	
+}
+.quform-theme-light-light .quform-elements .quform-element select {padding: 3px;}
+/*Fix Chrome select (no background image sorry!)*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.quform-theme-light-light .quform-elements .quform-element select {background: #E6E6E6;}
+}
+/*Hover element*/
+.quform-theme-light-light .quform-elements .quform-element-text input:hover,
+.quform-theme-light-light .quform-elements .quform-element-captcha input:hover,
+.quform-theme-light-light .quform-elements .quform-element-password input:hover,
+.quform-theme-light-light .quform-elements .quform-element select:hover,
+.quform-theme-light-light .quform-elements .quform-element textarea:hover {
+	color: #4d4d4d;
+	border: 1px solid #ccc;
+}
+/*Active element*/
+.quform-theme-light-light .quform-elements .quform-element-text input:active,
+.quform-theme-light-light .quform-elements .quform-element-captcha input:active,
+.quform-theme-light-light .quform-elements .quform-element-password input:active,
+.quform-theme-light-light .quform-elements .quform-element select:active,
+.quform-theme-light-light .quform-elements .quform-element textarea:active {
+	color: #000;
+	
+}
+/*Focused element*/
+.quform-theme-light-light .quform-elements .quform-element-text input:focus,
+.quform-theme-light-light .quform-elements .quform-element-captcha input:focus,
+.quform-theme-light-light .quform-elements .quform-element-password input:focus,
+.quform-theme-light-light .quform-elements .quform-element select:focus,
+.quform-theme-light-light .quform-elements .quform-element textarea:focus {
+	color: #000;
+	background: #e6e6e6;
+	border: 1px solid #ccc;
+	-webkit-transition: 500ms ease-in-out;
+	-moz-transition: 500ms ease-in-out;
+	-ms-transition: 500ms ease-in-out;
+}
+
+/*Fix Chrome select (no background image sorry!)*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.quform-theme-light-light .quform-elements .quform-element select {background: #fff;}
+}
+
+/* Default Label*/
+.quform-theme-light-light .quform-element > .quform-spacer > label {
+    font-weight: bold;
+	color: #000;
+}
+/*Tooltip icon*/
+.quform-theme-light-light .quform-tooltip-icon {
+    background: url(images/help-icon.png) no-repeat right bottom;
+}
+/*Select options*/
+.quform-theme-light-light select option {
+    padding-right: 10px;
+}
+.quform-theme-light-light select[multiple="multiple"] option {
+    padding: 0 5px;
+}
+
+/*****************************************************
+3.5: individual styles
+******************************************************/
+
+.quform-input #phone{
+	height: 60px; margin-right:0px;  width:437px;
+}
+
+.quform-input #name{
+	height: 60px; margin-right:0px;  width:437px;
+}
+
+.quform-input #email{
+	height: 60px; margin-left:0px; margin-top:5px; width:890px;
+}
+
+.quform-input #message{
+	height: 120px; margin-top:5px; margin-bottom:10px; width:890px;
+}
+
+@media screen and (max-width: 890px) {
+	
+	.quform-input #phone, .quform-input #name, .quform-input #email, .quform-input #message{
+		width:638px;
+	}
+	
+	.quform-input #phone{
+		margin-top:5px;
+	}
+	
+
+	
+}
+
+
+/*****************************************************
+4: Captcha
+******************************************************/
+
+/*Refresh captcha icon background*/
+.quform-theme-light-light .quform-captcha-inner {
+	margin-top: 3px;
+	border: 1px solid #ccc;
+}
+/*****************************************************
+5: Element groups
+******************************************************/
+
+/*Group title & description wrap plain*/
+.quform-theme-light-light .quform-group-style-plain > .quform-group-elements .quform-group-title-description-wrap {
+	margin-bottom: 20px;
+	padding-bottom: 5px;
+	border-bottom: solid 1px #eee;
+	border-top: solid 1px #eee;
+}
+/*Group title plain*/
+.quform-theme-light-light .quform-group-style-plain > .quform-group-elements .quform-group-title {
+	color: #000;
+	padding: 5px 0 0;
+	font-weight: normal;
+}
+/*Group description plain*/
+.quform-theme-light-light .quform-group-style-plain > .quform-group-elements p.quform-group-description {
+	color: #000;
+	padding: 0;
+	font-size: 11px;
+}
+/*IE fix for negative margins used below*/
+.quform-theme-light-light .quform-group-style-bordered > .quform-group-elements {min-width: 1px;}
+/*Group title & description wrap bordered*/
+.quform-theme-light-light .quform-group-style-bordered > .quform-group-elements .quform-group-title-description-wrap {
+	margin: -10px -10px 10px -10px;
+	border-bottom: solid 1px #eee;
+	background: #fff url(images/boxed-group-title-bg.png) repeat-x left top;
+	padding-bottom: 5px;
+}
+/*Group title bordered*/
+.quform-theme-light-light .quform-group-style-bordered > .quform-group-elements .quform-group-title {
+	color: #000;
+	padding: 5px 10px 0;
+	font-weight: normal;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4);
+	margin: 0;
+}
+/*Group description bordered*/
+.quform-theme-light-light .quform-group-style-bordered > .quform-group-elements p.quform-group-description {
+	color: #000;
+	font-size: 11px;
+	padding: 2px 10px 0;
+	margin: 0;
+}
+/*Bordered style group*/
+.quform-theme-light-light .quform-group-style-bordered > .quform-group-elements {
+	border: solid 1px #CCC;
+	background: #fefefe url(images/boxed-group-bg.png) repeat-x bottom left;
+	-webkit-box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.08);
+	-moz-box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.08);
+	box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.08);
+}
+.quform-theme-light-light .quform-group-style-bordered > .quform-group-row {
+}
+/*One row inside a group*/
+.quform-theme-light-light .quform-group-style-bordered > .quform-group-elements .quform-group-row {
+	background: url(images/boxed-group-break-line.png) repeat-x bottom left;
+	margin-bottom: 10px;
+}
+.quform-theme-light-light .quform-group-style-plain > .quform-group-elements .quform-group-row {
+	background: none;
+	margin-bottom: 0;
+}
+.quform-theme-light-light .quform-group-style-bordered .quform-group-row:last-child {
+	background: none;
+	margin-bottom: 0;
+}
+
+/*****************************************************
+6: Submit button and related
+******************************************************/
+/*Note: Submit button is designed so you can use rounded cornered image backgrounds that can be fluid size*/
+.quform-theme-light-light .quform-submit button {border: 0px outset #ccc;} /* optional - IE7 fix */
+/*Submit button wrap*//*You might want to use float:right here. Change loading icon wrap below too*/
+.quform-theme-light-light .quform-submit-inner {}
+/*Submit button hide*/
+.quform-theme-light-light .quform-submit button {
+	border: none;
+	background: none;
+	text-align: center;
+	width: auto;
+	overflow: visible;
+	white-space: nowrap;
+	padding: 0;
+	margin: 0;
+	height: auto;
+	line-height: auto;
+	cursor: pointer;
+	max-width: 100%;
+}
+/*Submit button default state*/
+.quform-theme-light-light .quform-submit button span {
+	color: #fff;
+	height: 0px;
+	line-height: 0;
+	padding:15px 40px;
+	
+}
+/*Default*/
+.quform-theme-light-light .quform-submit button span {
+	line-height: 0px;
+	font-size:20px;
+	width: auto;
+	height: auto;
+	padding: 21px 25px;
+	margin:0px 0px 40px 0;
+	text-align:center;
+	color:rgba(255, 255, 255, 1);
+	border: 1px solid #333333;
+	background: rgba(51, 51, 51, 1);
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;	         /* Opera/IE 8+ */
+	transition: all .4s linear;
+	-webkit-transition: all .4s linear;
+	-moz-transition: all .4s linear;
+	-o-transition: all .4s linear;
+	font-family:'GLight', sans-serif;
+	cursor:pointer;
+}
+/*Hover*/
+.quform-theme-light-light .quform-submit button:hover span {
+	color:rgba(0, 0, 0, 1);
+	background: rgba(0, 0, 0, 0);
+	border: 1px solid #333333;
+	box-sizing: border-box;	 
+}
+/*Active*/
+.quform-theme-light-light .quform-submit button:active span {
+	color:rgba(0, 0, 0, 1);
+	background: rgba(0, 0, 0, 0);
+	border: 1px solid #333333;
+	box-sizing: border-box;	 
+	
+}
+/*Default*/
+.quform-theme-light-light .quform-submit button em {
+	background: transparent; /*right image*/
+}
+/*Hover*/
+.quform-theme-light-light .quform-submit button:hover em {
+	background: transparent; /*right image*/
+	color: #4D4D4D; 
+}
+/*Active*/
+.quform-theme-light-light .quform-submit button:active em {
+	background: transparent; /*right image*/
+	color: #fff; 
+}
+/*Loading the submit*//*You will want this float:right if the button is right*/
+.quform-theme-light-light .quform-loading-wrap {margin-top: 9px;}
+.quform-theme-light-light .quform-button-fat .quform-loading-wrap {margin-top: 18px;}
+/*Loading gif image*/
+.quform-theme-light-light .quform-loading-wrap .quform-loading {}
+/*Preset button sizes - fat*/
+.quform-theme-light-light .quform-button-fat.quform-submit .quform-submit-inner button span {padding: 0 40px; line-height: 45px; height: 45px;}
+/*Preset button sizes - full width*/
+.quform-theme-light-light .quform-button-full-width.quform-submit .quform-submit-inner button {height: auto;}
+.quform-theme-light-light .quform-button-full-width.quform-submit .quform-submit-inner button span {line-height: 38px; height: 38px;}
+/*****************************************************
+7: Messages for user
+******************************************************/
+
+/*Errors*/
+.quform-theme-light-light .quform-errors > .quform-error {
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+	text-shadow: 1px 1px 0 #f3d6d4;
+}
+/*File upload errors*/
+.quform-theme-light-light .quform-queue-errors-list > .quform-queue-error {
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+	text-shadow: 1px 1px 0 #f3d6d4;
+}
+
+/*Success message*/
+.quform-theme-light-light .quform-success-message {
+	
+}
+/*quform referal link*/
+.quform-theme-light-light .quform-referral-link a {
+	color: #0F83CA;
+}
+.quform-theme-light-light .quform-referral-link a:hover {
+	color: #292929;
+}
+/*****************************************************
+8: Quform PHP specific
+******************************************************/
+/*Light close button*/
+.quform-theme-light-light.quform-outer a.quform-cancel-button {
+    background-image: url(images/close.png);
+}
+
+/*****************************************************
+9: Responsive
+******************************************************/
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 1024px) {
+	/* Make radio and checkboxes a bit easier to select on touch devices 
+	.quform-theme-light-light .quform-options .quform-option {
+		border: 0;
+		background: #4D4D4D;
+		
+	}
+	.quform-theme-light-light .quform-submit button span {
+		line-height: 35px;
+		height: 35px;
+	}
+	.quform-theme-light-light .quform-submit.quform-button-fat button {height: auto;}
+	.quform-theme-light-light .quform-submit.quform-button-fat button span {
+		height: 45px;
+		line-height: 45px;
+	}
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+
+}
